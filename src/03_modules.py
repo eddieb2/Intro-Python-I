@@ -5,11 +5,13 @@ methods, and the os module, which gives you access to lower-
 level operating system functionality.
 """
 
+
 import sys
 # See docs for the sys module: https://docs.python.org/3.7/library/sys.html
 
 # Print out the command line arguments in sys.argv, one per line:
 # YOUR CODE HERE
+print(sys.argv[0])
 
 # Print out the OS platform you're using:
 # YOUR CODE HERE
