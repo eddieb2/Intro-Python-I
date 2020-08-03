@@ -15,28 +15,23 @@ has the following keys:
  - name: a name string for this location
 """
 
-waypoints = [
-    {
-        "lat": 43,
-        "lon": -121,
-        "name": "a place"
-    },
-    {
-        "lat": 41,
-        "lon": -123,
-        "name": "another place"
-    },
-    {
-        "lat": 43,
-        "lon": -122,
-        "name": "a third place"
-    }
-]
+waypoints = [{
+    "lat": 43,
+    "lon": -121,
+    "name": "a place"
+}, {
+    "lat": 41,
+    "lon": -123,
+    "name": "another place"
+}, {
+    "lat": 43,
+    "lon": -122,
+    "name": "a third place"
+}, {"lat": 200, "lon": 400, "name": 'I do not know'}]
 
 # Add a new waypoint to the list
 # YOUR CODE HERE
 
-waypoints.append({"lat": 200, "lon": 400, "name": 'I do not know'})
 # print(waypoints)
 
 # Modify the dictionary with name "a place" such that its longitude
@@ -50,12 +45,12 @@ waypoints[0]['lon'] = -130
 waypoints[0]['name'] = 'not a real place'
 print(waypoints[0])
 
-#or 
+# or
 
-waypoints[0] = { "lat": 43, "lon": -130, "name": "not a real place"}
+waypoints[0] = {"lat": 43, "lon": -130, "name": "not a real place"}
 print(waypoints[0])
 
-#or
+# or
 
 waypoints[0].update({'lon': -130, 'name': 'not a real place'})
 print(waypoints[0])
