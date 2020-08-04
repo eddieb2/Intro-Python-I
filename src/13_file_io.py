@@ -11,7 +11,7 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 
 # YOUR CODE HERE
 
-#THIS WAY YOU MUST CLOSE THE FILE
+# THIS WAY YOU MUST CLOSE THE FILE
 
 fooFile = open('foo.txt', 'r')
 fileContent = fooFile.read()
@@ -41,13 +41,13 @@ print(content)
 names = ["Eddie", "John", "Tommy", "Pete"]
 
 with open('bar.txt', 'w') as barFile:
-    for name in names:                      # loops through names
-        barFile.write(name)                 # write each name to file
-        barFile.write("\n")                 # add new line after each name
+    for name in names:  # loops through names
+        barFile.write(name)  # write each name to file
+        barFile.write("\n")  # add new line after each name
 
 with open('bar.txt', 'r') as barFile:
     barContent = barFile.read()
 
-print('\n')           # Separates with a new line.
-print(barContent)     # Prints our file contents.
-print(barFile.closed) # Shows if the file was closed or not.
+print('\n')  # Separates with a new line.
+print(barContent)  # Prints our file contents.
+print(barFile.closed)  # Shows if the file was closed or not.

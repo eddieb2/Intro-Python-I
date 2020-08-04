@@ -60,15 +60,15 @@ print('\n')
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
 
-#https://stackoverflow.com/questions/8957750/what-are-dictionary-view-objects
+# https://stackoverflow.com/questions/8957750/what-are-dictionary-view-objects
 
-#Values only
+# Values only
 for item in waypoints:
     print(f'waypoint: {item.values()}')
 
 print('\n')
 
-## Values only
+# Values only
 for key, val in waypoints[0].items():
     print(f'val: {val}')
 
@@ -80,6 +80,6 @@ for item in waypoints:
 
 print('\n')
 
-## Key/Value pairs displayed
+# Key/Value pairs displayed
 for key, val in waypoints[0].items():
-    print(f'key: { key} , val: {val}')
+    print(f'key: {key} , val: {val}')

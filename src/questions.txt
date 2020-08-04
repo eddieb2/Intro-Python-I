@@ -1,0 +1,10 @@
+1. Are you familiar with pycharm? If so, do you know why I can't enter certain commit messages?
+     Example: git commit -m 'adds solutions'
+        error: pathspec 'adds' did not match any file(s) known to git
+        error: pathspec 'solutions'' did not match any file(s) known to git
+
+2. 12_scopes.py
+        Q: Did I answer task #2 correctly?
+        Q: Why do I need to global keywords?
+
+3. shadows name from outer scope? Not sure how to correct this warning for PEP8.
