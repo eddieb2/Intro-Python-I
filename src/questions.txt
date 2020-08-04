@@ -8,3 +8,4 @@
         Q: Why do I need to global keywords?
 
 3. shadows name from outer scope? Not sure how to correct this warning for PEP8.
+

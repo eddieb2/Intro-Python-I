@@ -22,12 +22,14 @@ print(x)
 # WHY DO I HAVE TO HAVE 2 GLOBAL Y'S ?
 
 def outer():
-    global y
+    # global y
     y = 120
 
     def inner():
-        global y
+        # global y
+        nonlocal y
         y = 999
+
 
     inner()
 
@@ -36,6 +38,6 @@ def outer():
     # Note: Google "python nested function scope".
     print(y)
 
-
 outer()
-print(f"y after execution: {y}")
+
+# print(f"y after execution: {y}")

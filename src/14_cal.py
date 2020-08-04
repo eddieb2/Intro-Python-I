@@ -33,3 +33,51 @@ from datetime import datetime
 
 
 def calendar_program():
+    month = input('Please enter month: ') or None
+    year = input('Please enter year: ') or None
+
+    current_month = datetime.now().month
+    current_year = datetime.now().year
+
+    if month is None and year is None:
+        # Print the calendar for the current month
+        print("\n")
+        print(calendar.month(current_year, current_month))
+    elif year is None:
+        # Print the calendar for the month input and current year
+        print("\n")
+        print(calendar.month(current_year, int(month)))
+    elif month is not None and year is not None:
+        # Print the calendar for the input month and year
+        print("\n")
+        print(calendar.month(int(year), int(month)))
+
+    sys.exit()
+
+
+calendar_program()
+
+# def calendar_program():
+#     month = input('Please enter month: ') or None
+#     year = input('Please enter year: ') or None
+#
+#     current_month = datetime.now().month
+#     current_year = datetime.now().year
+#
+#     if month is None and year is None:
+#         # Print the calendar for the current month
+#         print("\n")
+#         print(calendar.month(current_year, current_month))
+#     elif year is None:
+#         # Print the calendar for the month input and current year
+#         print("\n")
+#         print(calendar.month(current_year, int(month)))
+#     elif month is not None and year is not None:
+#         # Print the calendar for the input month and year
+#         print("\n")
+#         print(calendar.month(int(year), int(month)))
+#
+#     sys.exit()
+#
+#
+# calendar_program()
