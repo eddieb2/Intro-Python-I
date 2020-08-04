@@ -61,10 +61,25 @@ print('\n')
 # YOUR CODE HERE
 
 #https://stackoverflow.com/questions/8957750/what-are-dictionary-view-objects
+
+#Values only
 for item in waypoints:
     print(f'waypoint: {item.values()}')
 
 print('\n')
 
+## Values only
+for key, val in waypoints[0].items():
+    print(f'val: {val}')
+
+print('\n')
+
+# Entire dict w/ key/value pairs
 for item in waypoints:
     print(f'waypoint: {item}')
+
+print('\n')
+
+## Key/Value pairs displayed
+for key, val in waypoints[0].items():
+    print(f'key: { key} , val: {val}')
