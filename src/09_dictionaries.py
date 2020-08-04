@@ -55,8 +55,16 @@ print(waypoints[0])
 waypoints[0].update({'lon': -130, 'name': 'not a real place'})
 print(waypoints[0])
 
+print('\n')
+
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
 
+#https://stackoverflow.com/questions/8957750/what-are-dictionary-view-objects
 for item in waypoints:
     print(f'waypoint: {item.values()}')
+
+print('\n')
+
+for item in waypoints:
+    print(f'waypoint: {item}')
