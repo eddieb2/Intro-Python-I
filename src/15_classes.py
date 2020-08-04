@@ -22,7 +22,7 @@ class Waypoint(LatLon):
         self.name = name
 
     def __str__(self):
-        return f'Waypoint(name="{self.name}",' \
+        return f'{self.__class__.__name__}(name="{self.name}",' \
                f'lat="{self.lat}", lon="{self.lon}")'
 
 
@@ -57,3 +57,5 @@ new_geocache = Geocache('Newberry Views', 1.5, 2, 44.052137, -121.41556)
 
 # Print it--also make this print more nicely
 print(new_geocache)
+
+# print(help(Geocache))
