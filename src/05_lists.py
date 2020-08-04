@@ -32,10 +32,13 @@ print(len(x))
 
 # Print all the values in x multiplied by 1000
 # YOUR CODE HERE
-for num in x:
-    print(num * 1000)
+for index, num in enumerate(x):
+    print(num * 1000, ' ' ,end='')
+
+print('\n')
 
 z = []
+
 for num in x:
     z.append(num * 1000)
 
