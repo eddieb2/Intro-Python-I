@@ -1,17 +1,23 @@
-1. Are you familiar with pycharm? If so, do you know why I can't enter certain commit messages?
+x1. Are you familiar with pycharm? If so, do you know why I can't enter certain commit messages?
      Example: git commit -m 'adds solutions'
         error: pathspec 'adds' did not match any file(s) known to git
         error: pathspec 'solutions'' did not match any file(s) known to git
 
-2. 12_scopes.py
+x2. 12_scopes.py
         Q: Did I answer task #2 correctly?
         Q: Why do I need to global keywords?
 
-3. shadows name from outer scope? Not sure how to correct this warning for PEP8.
+x3. shadows name from outer scope? Not sure how to correct this warning for PEP8.
 
 4. Class inheritance
-    Parent class has a method called information.
+   x Parent class has a method called information.
         This methods prints name and birth year.
 
-    How do I inherit this method to a child class and change it up to print name birth year and college?
+    xHow do I inherit this method to a child class and change it up to print name birth year and college?
     Or would it make more sense to just create a new method in the child class to do exactly what I want?
+
+    xNeed clarification on super(). Do I pass in only what I want to inherit or just what needs to be
+                                    inherited and overwritten?
+
+    x__str__ vs __repr__ for classes
+                                    Did I use __str__ incorrectly?
